@@ -1,0 +1,8 @@
+# The TEP source CSVs are multi-gigabyte; obtain them from the dataset source in README.md.
+data/
+# Local temporary work and editor/runtime artifacts.
+scratch/
+__pycache__/
+*.py[cod]
+.venv/
+venv/

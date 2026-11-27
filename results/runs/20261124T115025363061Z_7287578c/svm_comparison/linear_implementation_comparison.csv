@@ -1,0 +1,4 @@
+implementation,accuracy,fault_precision,fault_recall,fault_f1,training_time_seconds,margin_active_points,support_vectors,training_rows,test_rows,C,bias_method,duality_gap,max_kkt_margin_violation,equality_residual,solver_status,solver_iterations,solver_converged,convergence_warnings
+From-scratch hinge subgradient,0.6439393939393939,0.8444444444444444,0.304,0.4470588235294118,0.0564606999996613,542.0,not defined by primal scratch model,736,264,1.0,,,,,,,,
+CVXOPT dual quadratic program,0.696969696969697,0.8169014084507042,0.464,0.5918367346938775,5.259183599999233,,493,736,264,1.0,free_support_vectors,5.390927526605083e-08,1.0516411830252537e-07,8.881784197001252e-15,optimal,,,
+scikit-learn LinearSVC (hinge),0.696969696969697,0.8169014084507042,0.464,0.5918367346938775,0.05292430000008608,,not exposed by LinearSVC,736,264,1.0,,,,,,6436.0,True,

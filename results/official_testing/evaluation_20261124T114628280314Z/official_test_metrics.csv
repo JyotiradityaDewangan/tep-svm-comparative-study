@@ -1,0 +1,2 @@
+observations,feature_count,normal_observations,faulty_observations,accuracy,precision,recall,f1_score,roc_auc,confusion_matrix,evaluation_seconds
+10080000,52,480000,9600000,0.542558630952381,0.9998675433785416,0.5197554166666667,0.6839677805404175,0.7931467916733941,"[[479339, 661], [4610348, 4989652]]",2505.6255641000007

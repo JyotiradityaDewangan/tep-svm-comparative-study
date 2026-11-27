@@ -1,0 +1,15 @@
+CHEMICAL PROCESS FAULT DETECTION USING SVM
+Run ID: 20261125T050849734163Z_7925dfe0
+Dataset: Tennessee Eastman Process (TEP_FaultFree_Training.csv, TEP_Faulty_Training.csv)
+Sampled rows: 20000
+Features: 52
+Split: group-aware split by source file and simulation run
+Training rows: 16034
+Testing rows: 3966
+accuracy: 0.7773575390821987
+precision: 0.9983150800336984
+recall: 0.5735721200387222
+f1_score: 0.7285582539194589
+roc_auc: 0.8323335201508127
+testing_time_seconds: 3.526815199998964
+training_time_seconds: 23.599605499999598

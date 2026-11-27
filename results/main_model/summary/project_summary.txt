@@ -1,0 +1,87 @@
+CHEMICAL PROCESS FAULT DETECTION USING SVM
+
+Dataset: Tennessee Eastman Process, as provided in local CSV files.
+The dataset simulates a chemical plant with reactor, condenser, separator, compressor, and stripper units.
+Dataset Name: Tennessee Eastman Process (provided CSV files)
+Sampled Observations: 20000
+Rows Scanned: 5250000
+Rows By Source File: {'TEP_FaultFree_Training.csv': 250000, 'TEP_Faulty_Training.csv': 5000000}
+Number Of Columns: 55
+Target Column: faultNumber
+Input Features: ['xmeas_1', 'xmeas_2', 'xmeas_3', 'xmeas_4', 'xmeas_5', 'xmeas_6', 'xmeas_7', 'xmeas_8', 'xmeas_9', 'xmeas_10', 'xmeas_11', 'xmeas_12', 'xmeas_13', 'xmeas_14', 'xmeas_15', 'xmeas_16', 'xmeas_17', 'xmeas_18', 'xmeas_19', 'xmeas_20', 'xmeas_21', 'xmeas_22', 'xmeas_23', 'xmeas_24', 'xmeas_25', 'xmeas_26', 'xmeas_27', 'xmeas_28', 'xmeas_29', 'xmeas_30', 'xmeas_31', 'xmeas_32', 'xmeas_33', 'xmeas_34', 'xmeas_35', 'xmeas_36', 'xmeas_37', 'xmeas_38', 'xmeas_39', 'xmeas_40', 'xmeas_41', 'xmv_1', 'xmv_2', 'xmv_3', 'xmv_4', 'xmv_5', 'xmv_6', 'xmv_7', 'xmv_8', 'xmv_9', 'xmv_10', 'xmv_11']
+Number Of Input Features: 52
+Metadata Columns: ['faultNumber', 'simulationRun', 'sample']
+Internal Columns Excluded: ['_source_file', '_binary_target']
+Normal Label In Source: 0
+Normal Observations: 10000
+Faulty Observations: 10000
+Missing Values: {}
+Duplicate Rows: 0
+Quality Check Scope: missing values and duplicates checked on the sampled rows
+Source Files: ['TEP_FaultFree_Training.csv', 'TEP_Faulty_Training.csv']
+Training Observations: 16034
+Testing Observations: 3966
+Svm Kernel: rbf
+Svm C: 1.0
+Svm Gamma: scale
+Accuracy: 0.7773575390821987
+Precision: 0.9983150800336984
+Recall: 0.5735721200387222
+F1 Score: 0.7285582539194589
+Roc Auc: 0.8323335201508127
+Testing Time Seconds: 10.029564899974503
+Training Time Seconds: 31.51815920000081
+
+Generated plots:
+results\plots\class_distribution.png
+results\heatmaps\confusion_matrix.png
+results\heatmaps\sensor_correlation.png
+results\plots\roc_curve.png
+results\plots\precision_recall_curve.png
+results\plots\sensor_distribution_xmeas_1.png
+results\plots\sensor_distribution_xmeas_2.png
+results\plots\sensor_distribution_xmeas_3.png
+
+Files in results\excel_reports:
+results\excel_reports\classification_report.xlsx
+results\excel_reports\dataset_summary.xlsx
+results\excel_reports\model_performance.xlsx
+results\excel_reports\sensor_statistics.xlsx
+results\excel_reports\svm_experiments.xlsx
+
+Files in results\csv_reports:
+results\csv_reports\actual_vs_predicted.csv
+results\csv_reports\dataset_class_distribution.csv
+results\csv_reports\model_metrics.csv
+results\csv_reports\svm_c_kernel_experiments.csv
+results\csv_reports\svm_c_parameter_experiment.csv
+results\csv_reports\svm_implementation_comparison.csv
+results\csv_reports\svm_kernel_experiment.csv
+results\csv_reports\svm_sample_size_experiment.csv
+
+Files in results\predictions:
+results\predictions\test_predictions.csv
+
+SVM experiment files:
+results\svm_from_scratch\linear_svm_from_scratch.pkl
+results\svm_from_scratch\scratch_svm_metrics.csv
+results\svm_from_scratch\scratch_svm_metrics.xlsx
+results\cvxopt_svm\cvxopt_svm_metrics.csv
+results\cvxopt_svm\cvxopt_svm_metrics.xlsx
+results\cvxopt_svm\linear_svm_cvxopt.pkl
+results\svm_comparison\linear_implementation_comparison.csv
+results\svm_comparison\linear_implementation_comparison.png
+results\svm_comparison\linear_implementation_comparison.xlsx
+results\svm_comparison\sample_size_fit_time.csv
+results\svm_comparison\sample_size_fit_time.xlsx
+results\svm_comparison\svm_experiments.xlsx
+results\svm_comparison\training_time_vs_sample_size.png
+results\c_parameter_experiment\c_parameter_effect.png
+results\c_parameter_experiment\linear_svc_c_parameter.csv
+results\c_parameter_experiment\linear_svc_c_parameter.xlsx
+results\kernel_experiment\linear_vs_rbf.csv
+results\kernel_experiment\linear_vs_rbf.xlsx
+results\kernel_experiment\linear_vs_rbf_comparison.png
+results\convergence\scratch_svm_convergence.png
+results\convergence\scratch_svm_loss.csv
+results\convergence\scratch_svm_loss.xlsx

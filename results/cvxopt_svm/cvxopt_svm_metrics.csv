@@ -1,0 +1,2 @@
+implementation,accuracy,fault_precision,fault_recall,fault_f1,training_time_seconds,support_vectors,training_rows,test_rows,C,solver_iterations,solver_converged
+CVXOPT dual quadratic program,0.6856060606060606,0.7692307692307693,0.48,0.5911330049261084,5.106904200016288,550,736,264,1.0,,

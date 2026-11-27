@@ -1,0 +1,2 @@
+implementation,accuracy,fault_precision,fault_recall,fault_f1,training_time_seconds,support_vectors,training_rows,test_rows,C,solver_iterations,solver_converged
+From-scratch hinge subgradient,0.6515151515151515,0.8,0.352,0.4888888888888889,0.055861600005300716,552,736,264,1.0,,
